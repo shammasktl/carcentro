@@ -39,7 +39,7 @@
 
 .hero .content .box1 p {
     font-size: 1.25rem;
-    max-width: 400px;
+    max-width: 500px;
     display: inline-block;
     text-align: justify;
     line-height: 1.5;
@@ -52,6 +52,12 @@
     color: var(--card-light-green);
     border: none;
     font-weight: 500;
+    transition: 0.5s;
+}
+
+.hero .content .box1 .btn:hover {
+    background-color: #d5ffd4;
+    border: none;
 }
 
 .hero .content .box2 {
@@ -107,6 +113,9 @@
         width: calc(100% + 800px);
         display: inline-block;
         margin: 0 auto;
+    }
+    .hero .content .box1 p {
+        max-width: 100%;
     }
 }
 
