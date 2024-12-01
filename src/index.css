@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+:root {
+    --font-family: "Parkinsans", serif;
+    --main-bg: #eeeeee;
+    --white: #fff;
+    --black: #000;
+    --gray: #808080;
+    --logo-bg: #0d5a62;
+    --card-light-green: #0e5b63;
+    --card-dark-green: #0a3438;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+#root {
+    background: var(--main-bg);
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}

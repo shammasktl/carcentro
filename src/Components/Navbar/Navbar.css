@@ -1,0 +1,103 @@
+.navbar {
+    padding: 15px;
+    background: var(--white);
+    border-radius: 100px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .logo h2 {
+    color: var(--white);
+    padding: 9px;
+    border-radius: 55px;
+    background: var(--logo-bg);
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.5s;
+}
+
+.links ul li a:hover {
+    color: var(--gray);
+}
+
+.auth {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.auth span {
+    font-size: 1.75rem;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--gray);
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 50px;
+}
+
+.auth .toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.responsive-open {
+    display: none;
+    position: absolute;
+    top: 89px;
+    right: -25px;
+    transition: all 0.5s;
+}
+
+.responsive-open .links ul {
+    text-align: center;
+    background: var(--white);
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 0.25px 0 rgba(0, 0, 0, 0.05), -1px -0.5px 0.25px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 900px) {
+    .navbar > .links {
+        display: none;
+    }
+
+    .auth {
+        flex-direction: row-reverse;
+    }
+
+    .auth .toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .responsive-open {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 540px) {
+    .auth .btn {
+        display: none;
+    }
+}
