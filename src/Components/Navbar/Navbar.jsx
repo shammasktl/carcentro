@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
             <div className="auth">
                 <div className="toggle">
-                    <Hamburger toggled={isOpen} size={24} toggle={setOpen} />
+                    <Hamburger color='#808080' toggled={isOpen} size={24} toggle={setOpen} />
                 </div>
                 <span>
                     <IoSearch />
