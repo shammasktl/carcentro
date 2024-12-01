@@ -74,7 +74,11 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    box-shadow: 3px 3px 0.25px 0 rgba(0, 0, 0, 0.05), -1px -0.5px 0.25px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 3px 3px 0.25px 0 rgba(43, 71, 47, 0.05), -1px -0.5px 0.25px 0 rgba(0, 0, 0, 0.025);
+}
+
+.responsive-open .btn {
+    display: none;
 }
 
 @media (max-width: 900px) {
@@ -99,5 +103,8 @@
 @media (max-width: 540px) {
     .auth .btn {
         display: none;
+    }
+    .responsive-open .btn {
+        display: inline-block;
     }
 }
