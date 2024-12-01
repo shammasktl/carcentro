@@ -92,7 +92,7 @@
 }
 
 .img img {
-    width: 90%;
+    width: 100%;
     height: 525px;
     object-fit: cover;
     border-radius: 25px;
@@ -121,6 +121,12 @@
     div[class^="box"] {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 934px) {
+    .hero .img img {
+        width: 70vw;
     }
 }
 
