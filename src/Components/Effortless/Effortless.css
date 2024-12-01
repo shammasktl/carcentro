@@ -1,0 +1,113 @@
+.effortless {
+    display: flex;
+    margin-top: 60px;
+    padding: 25px;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    gap: 25px;
+}
+
+.effortless .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effortless.img img {
+    max-width: 90vw;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.effortless .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 25px;
+}
+
+.effortless .content h1{
+    max-width: 450px;
+    font-size: 2.08em;
+    font-weight: 400;
+}
+
+.effortless .content p{
+    max-width: 450px;
+    line-height: 1.9;
+}
+
+.effortless .content .tout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.effortless .content .tout :is(.one, .two) p {
+    max-width: 220px;
+    text-align: center;
+}
+
+.effortless .content .tout :is(.one, .two) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 55px;
+    border-radius: 25px;
+}
+
+.effortless .content .tout :is(.one, .two) .icon {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+
+.effortless .content .tout .one {
+    background: var(--card-dark-green);
+    color: var(--white);
+}
+
+.effortless .content .tout .two {
+    background: var(--card-light-green);
+    color: var(--white);
+}
+
+@media (max-width: 1223px) {
+    .effortless .content {
+        text-align: center;
+    }
+    .effortless .content .tout {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .effortless .content .tout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-top: 50px;
+    }
+    .effortless {
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+    .effortless .content {
+        align-items: center;
+        text-align: center;
+    }
+    .effortless .content :is(h1, p, .one h3, .one p, .two h3, .two p,) {
+        text-align: center;
+    }
+}

@@ -19,7 +19,7 @@
 .links ul {
     display: flex;
     list-style: none;
-    gap: 8px;
+    gap: 16px;
 }
 
 .links ul li a {

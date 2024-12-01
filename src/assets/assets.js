@@ -5,7 +5,7 @@ import corvetteStingray from './Corvette Stingray.jpg';
 import customize from './customize.png';
 import pontiacFirebird from './Pontiac Firebird.jpg';
 import purchase from './purchase.png';
-import dodgeCharger from './Dodge Charger.jpg';
+import miniCooper from './Mini Cooper Clubman.jpg';
 
 export const assets = {
     browse,
@@ -15,7 +15,7 @@ export const assets = {
     customize,
     pontiacFirebird,
     purchase,
-    dodgeCharger,
+    miniCooper
 }
 
 export const steps= [
@@ -40,4 +40,22 @@ export const steps= [
         description: "Indulge in a seamless and stress-free car-buying experience with effortless transactions that save you time and energy. Benefit from a range of secure and reliable payment options, ensuring that your financial transactions are safe and protected. Enjoy the simplicity of straightforward and transparent paperwork, eliminating any confusion and making the entire process faster and more efficient.",
         color: "#0e5b63"
     },
+]
+
+export const cars = [
+    {
+        img: miniCooper,
+        title: "2024 Dodge Charger",
+        top: "NEW CAR",
+    },
+    {
+        img: pontiacFirebird,
+        title: "2024 Pontiac Firebird",
+        top: "QUICK HATCHBACK",
+    },
+    {
+        img: corvetteStingray,
+        title: "2022 Corvette Stingray",
+        top: "EVERLASTING",
+    }
 ]
